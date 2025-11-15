@@ -1,0 +1,53 @@
+{
+  "name": "@unify-tracker/js",
+  "version": "0.1.0",
+  "description": "UnifyTracker JS SDK",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js",
+    "default": "./dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UnifyTracker/unify-tracker-js.git"
+  },
+  "keywords": [
+    "UnifyTracker",
+    "analytics",
+    "sdk",
+    "web",
+    "javascript",
+    "typescript"
+  ],
+  "author": "UnifyTracker",
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/UnifyTracker/unify-tracker-js/issues"
+  },
+  "homepage": "https://github.com/UnifyTracker/unify-tracker-js",
+  "peerDependencies": {
+    "rrweb": "^2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "rrweb": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "rrweb": "^2.0.0-alpha.4",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "web-vitals": "^5.0.3"
+  }
+}
