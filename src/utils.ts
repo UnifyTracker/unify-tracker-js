@@ -62,13 +62,13 @@ export function findMatchingPattern(path: string, patterns: string[] = []): stri
 
 export function log(...args: any[]): void {
   if (currentConfig.debug) {
-    console.log("[Rybbit]", ...args);
+    console.log("[UnifyTracker]", ...args);
   }
 }
 
 export function logError(...args: any[]): void {
   if (currentConfig.debug) {
-    console.error("[Rybbit Error]", ...args);
+    console.error("[UnifyTracker Error]", ...args);
   }
 }
 
