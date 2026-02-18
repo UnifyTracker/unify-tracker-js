@@ -11,13 +11,13 @@ let isInitialized = false;
 
 const uniTracker: UniTrackerAPI = {
   /**
-   * Initializes the Rybbit SDK. Must be called before any other tracking methods.
+   * Initializes the UnifyTracker SDK. Must be called before any other tracking methods.
    *
    * @param config - Configuration object.
    */
   init: async (config: UniTrackerConfig) => {
     if (isInitialized) {
-      logError("Rybbit SDK already initialized. Call init() only once.");
+      logError("UnifyTracker SDK already initialized. Call init() only once.");
       return;
     }
 

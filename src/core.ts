@@ -38,7 +38,7 @@ export function track(
   }
 
   if (!currentConfig || !currentConfig.analyticsHost || !currentConfig.siteId) {
-    logError("UniTracker config not available. Ensure rybbit.init() was called successfully.");
+    logError("UniTracker config not available. Ensure UnifyTracker.init() was called successfully.");
     return;
   }
 

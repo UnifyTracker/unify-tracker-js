@@ -124,7 +124,7 @@ export async function initializeConfig(options: UniTrackerConfig): Promise<boole
   const siteId = options.siteId;
   if (!siteId || siteId.trim() === "") {
     logError(
-      "`siteId` is required in Rybbit config and must be a non-empty string."
+      "`siteId` is required in UnifyTracker config and must be a non-empty string."
     );
     return false;
   }

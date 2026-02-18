@@ -76,13 +76,13 @@ function handleClick(event: MouseEvent): void {
 
   let element: Element | null = event.target;
   while (element) {
-    if (element.hasAttribute("data-rybbit-event")) {
-      const eventName = element.getAttribute("data-rybbit-event");
+    if (element.hasAttribute("data-unitracker-event")) {
+      const eventName = element.getAttribute("data-unitracker-event");
       if (eventName) {
         const properties: Record<string, string> = {};
         for (const attr of element.attributes) {
-          if (attr.name.startsWith("data-rybbit-prop-")) {
-            const propName = attr.name.replace("data-rybbit-prop-", "");
+          if (attr.name.startsWith("data-unitracker-prop-")) {
+            const propName = attr.name.replace("data-unitracker-prop-", "");
             properties[propName] = attr.value;
           }
         }
